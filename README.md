@@ -1,1 +1,1 @@
-EUMAS2024: European Workshop on MultiAgent Systems
+EUMAS2025: European Workshop on MultiAgent Systems
