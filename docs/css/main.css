@@ -8,6 +8,10 @@
 	font-style: italic;
 }
 
+.nav-small {
+	font-size: small;
+}
+
 li {
     margin-left:12px;
 }
