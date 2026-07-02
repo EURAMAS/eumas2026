@@ -200,6 +200,32 @@ html {
 	vertical-align: middle;
 }
 
+/* Program Committee: multi-column list for long member rosters */
+.committee-columns {
+	column-count: 1;
+	column-gap: 40px;
+	list-style: none;
+	padding-left: 0;
+}
+
+.committee-columns li {
+	margin-left: 0;
+	margin-bottom: 6px;
+	break-inside: avoid;
+}
+
+@media (min-width: 576px) {
+	.committee-columns {
+		column-count: 2;
+	}
+}
+
+@media (min-width: 992px) {
+	.committee-columns {
+		column-count: 3;
+	}
+}
+
 /* Reduce the base template's large default section spacing.
    Original rule in tooplace-style.css: `section { padding: 100px 0; }`
    plus `.section-title { padding-bottom: 40px; }`. Since main.css loads
