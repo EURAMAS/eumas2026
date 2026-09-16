@@ -226,6 +226,159 @@ html {
 	}
 }
 
+/* Detailed Programme */
+.prog-day {
+	margin-bottom: 40px;
+}
+
+.prog-day-head {
+	display: flex;
+	align-items: baseline;
+	gap: 12px;
+	border-bottom: 2px solid var(--eumas-accent);
+	padding-bottom: 8px;
+	margin-bottom: 20px;
+}
+
+.prog-day-head h4 {
+	margin: 0;
+	color: var(--eumas-accent);
+}
+
+.prog-day-head span {
+	color: #757575;
+	font-size: 0.9em;
+}
+
+.prog-session {
+	background: #ffffff;
+	border: 1px solid #e7e7e7;
+	border-radius: 10px;
+	padding: 20px 24px;
+	margin-bottom: 20px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+.prog-session--keynote {
+	border-left: 4px solid var(--eumas-accent);
+}
+
+.prog-session-head {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-bottom: 12px;
+}
+
+.prog-session-no {
+	display: inline-block;
+	background: var(--eumas-accent-light);
+	color: var(--eumas-accent);
+	font-size: 0.72em;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+	padding: 3px 10px;
+	border-radius: 12px;
+	margin-bottom: 6px;
+}
+
+.prog-session-title {
+	margin: 4px 0 0 0;
+	font-weight: 700;
+}
+
+.prog-session-meta {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	font-size: 0.85em;
+	color: #757575;
+	text-align: right;
+}
+
+.prog-session-date {
+	font-weight: 600;
+	color: #555555;
+}
+
+.prog-keynote {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 10px 0;
+}
+
+.prog-keynote-name {
+	font-weight: 700;
+}
+
+.prog-keynote-link {
+	color: #757575;
+	font-size: 0.9em;
+}
+
+.prog-pitch-note {
+	font-size: 0.85em;
+	color: #757575;
+	font-style: italic;
+	margin: 8px 0;
+}
+
+.prog-papers {
+	list-style: none;
+	padding-left: 0;
+	margin: 10px 0 0 0;
+}
+
+.prog-papers li {
+	display: flex;
+	gap: 12px;
+	padding: 8px 0;
+	border-top: 1px solid #f0f0f0;
+}
+
+.prog-papers li:first-child {
+	border-top: none;
+}
+
+.prog-id {
+	flex-shrink: 0;
+	width: 32px;
+	height: 32px;
+	background: var(--eumas-accent-light);
+	color: var(--eumas-accent);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.8em;
+	font-weight: 700;
+}
+
+.prog-title {
+	margin: 0 0 2px 0;
+	font-weight: 600;
+}
+
+.prog-authors {
+	margin: 0;
+	font-size: 0.85em;
+	color: #757575;
+}
+
+@media (max-width: 576px) {
+	.prog-session-head {
+		flex-direction: column;
+	}
+
+	.prog-session-meta {
+		align-items: flex-start;
+		text-align: left;
+	}
+}
+
 /* Reduce the base template's large default section spacing.
    Original rule in tooplace-style.css: `section { padding: 100px 0; }`
    plus `.section-title { padding-bottom: 40px; }`. Since main.css loads
@@ -334,164 +487,5 @@ section {
 
 	.keynote-card .card-body {
 		text-align: left;
-	}
-}
-
-
-/* ==== Detailed session programme (generated) ==== */
-.prog-detail {
-	margin-top: 10px;
-}
-
-.prog-day {
-	margin-bottom: 32px;
-}
-
-.prog-day-head {
-	display: flex;
-	align-items: baseline;
-	gap: 12px;
-	border-bottom: 2px solid var(--eumas-accent);
-	padding-bottom: 6px;
-	margin-bottom: 18px;
-}
-
-.prog-day-head h4 {
-	margin: 0;
-	font-weight: 700;
-	color: var(--eumas-accent-dark);
-}
-
-.prog-day-head span {
-	font-size: 0.9em;
-	color: #757575;
-}
-
-.prog-session {
-	background: #ffffff;
-	border: 1px solid #e7e7e7;
-	border-radius: 10px;
-	padding: 20px 24px;
-	margin-bottom: 16px;
-	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
-	transition: box-shadow 0.2s ease, transform 0.2s ease;
-}
-
-.prog-session:hover {
-	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-	transform: translateY(-2px);
-}
-
-.prog-session--keynote {
-	border-color: var(--eumas-accent);
-}
-
-.prog-session-head {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	gap: 16px;
-	flex-wrap: wrap;
-	margin-bottom: 4px;
-}
-
-.prog-session-no {
-	display: block;
-	font-size: 0.72em;
-	text-transform: uppercase;
-	letter-spacing: 0.06em;
-	color: #757575;
-}
-
-.prog-session-title {
-	margin: 2px 0 0 0;
-	font-weight: 700;
-	color: #222222;
-}
-
-.prog-session-meta {
-	text-align: right;
-	font-size: 0.85em;
-	color: #555555;
-	display: flex;
-	flex-direction: column;
-	gap: 2px;
-	white-space: nowrap;
-}
-
-.prog-keynote {
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	gap: 10px;
-	background: var(--eumas-accent-light);
-	border-radius: 8px;
-	padding: 10px 14px;
-	margin: 12px 0 4px 0;
-}
-
-.prog-keynote .keynote-badge {
-	margin-bottom: 0;
-}
-
-.prog-keynote-name {
-	font-size: 1.05em;
-	font-weight: 700;
-	color: var(--eumas-accent-dark);
-}
-
-.prog-keynote-link {
-	font-size: 0.85em;
-	color: #757575;
-}
-
-.prog-pitch-note {
-	font-size: 0.88em;
-	color: #757575;
-	margin: 10px 0 6px 0;
-}
-
-.prog-papers {
-	list-style: none;
-	margin: 8px 0 0 0;
-	padding-left: 0;
-}
-
-.prog-papers li {
-	display: flex;
-	gap: 14px;
-	margin-left: 0;
-	padding: 9px 0;
-	border-top: 1px solid #eeeeee;
-}
-
-.prog-id {
-	flex: 0 0 2.2rem;
-	text-align: right;
-	font-weight: 700;
-	font-size: 0.9em;
-	color: var(--eumas-accent);
-	font-variant-numeric: tabular-nums;
-}
-
-.prog-title {
-	margin: 0;
-	font-weight: 600;
-	font-size: 0.98em;
-	line-height: 1.35;
-	color: #222222;
-}
-
-.prog-authors {
-	margin: 3px 0 0 0;
-	font-size: 0.85em;
-	line-height: 1.35;
-	color: #757575;
-}
-
-@media (max-width: 576px) {
-	.prog-session-meta {
-		text-align: left;
-		white-space: normal;
 	}
 }
