@@ -52,6 +52,57 @@
 			color: #6b7780;
 		}
 		.prog-legend .prog-award { margin-left: 0; margin-right: .5em; }
+		.prog-award--won {
+			background: #f6e3b0;
+			border-color: #d9b45c;
+			color: #6f4c09;
+		}
+		.wrapup-caption {
+			margin-top: 10px;
+			font-size: 13px;
+			color: #6b7780;
+			font-style: italic;
+		}
+		.next-edition {
+			margin-top: 10px;
+			padding: 24px 28px;
+			border: 1px solid #cfe0ea;
+			border-left: 4px solid #1b6f94;
+			border-radius: 4px;
+			background: #f2f8fb;
+			text-align: center;
+		}
+		.next-edition-label {
+			display: block;
+			font-size: 12px;
+			font-weight: 600;
+			letter-spacing: .08em;
+			text-transform: uppercase;
+			color: #1b6f94;
+			margin-bottom: 6px;
+		}
+		.next-edition h4 { margin: 0 0 4px; font-weight: 700; }
+		.next-edition-sub { margin: 0 0 8px; color: #45525c; }
+		.next-edition-meta { margin: 0; font-weight: 600; }
+		.award-eyebrow {
+			margin: 0 0 4px;
+			font-size: 12px;
+			font-weight: 600;
+			letter-spacing: .08em;
+			text-transform: uppercase;
+			color: #8a6212;
+		}
+		.award-title { margin: 0 0 6px; font-weight: 700; }
+		.award-authors { margin: 0 0 16px; color: #45525c; font-style: italic; }
+		.award-noms { padding-left: 18px; }
+		.award-noms li { margin-bottom: 8px; }
+		.award-noms span { color: #6b7780; font-size: 13px; }
+		.award-cert {
+			width: 100%;
+			max-width: 520px;
+			border: 1px solid #e0e4e7;
+			border-radius: 4px;
+		}
 	</style>
 </head>
 
@@ -71,7 +122,7 @@
 					<li class="nav-item"><a class="nav-link" href="#about" aria-disabled="true">About</a></li>
 					<li class="nav-item"><a class="nav-link" href="#cfp" aria-disabled="true">CFP</a></li>
                     <li class="nav-item"><a class="nav-link" href="#programme" aria-disabled="true">Programme</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link" href="#awards" aria-disabled="true">Awards</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
                     <li class="nav-item"><a class="nav-link" href="#publication" aria-disabled="true">Publication</a></li>
                     <li class="nav-item"><a class="nav-link" href="#registration" aria-disabled="true">Registration</a></li> 
                     <li class="nav-item"><a class="nav-link" href="#local" aria-disabled="true">Venue</a></li>
@@ -141,16 +192,50 @@
 		</div>
 	</div>
 
+
+	<!-- POST-CONFERENCE WRAP-UP -->
+	<section id="wrapup">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-offset-3 col-md-6 col-sm-12">
+					<div class="section-title">
+						<h3>Thank You for Joining Us in Malm&ouml;</h3>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12" style="text-align:center;">
+					<img src="images/group-photo-2026.jpg" alt="EUMAS 2026 participants" style="width:100%;max-width:1100px;border-radius:4px;" />
+					<p class="wrapup-caption">EUMAS 2026 participants at the conference dinner, Sankt Gertruds, 24 September 2026.</p>
+				</div>
+			</div>
+			<div class="row" style="margin-top:20px;">
+				<div class="col-md-offset-2 col-md-8 col-sm-12" style="text-align:justify;">
+					<p>
+						EUMAS 2026 brought the multi-agent systems community to Malm&ouml; for five days of tutorials, talks, demonstrations and conversation. Thank you to everyone who took part: the authors and presenters, our keynote speakers Ann Now&eacute; and Carles Sierra, the session chairs, the programme committee and reviewers, the tutors and participants of the 26th European Agent Systems Summer School, and the student volunteers and event coordinators who kept the week running.
+					</p>
+				</div>
+			</div>
+			<div class="row" style="margin-top:10px;">
+				<div class="col-md-offset-2 col-md-8 col-sm-12">
+					<div class="next-edition">
+						<span class="next-edition-label">Next edition</span>
+						<h4>EUMAS 2027</h4>
+						<p class="next-edition-sub">The 24th European Conference on Multi-Agent Systems</p>
+						<p class="next-edition-meta">September 15&ndash;17, 2027 &nbsp;|&nbsp; Toulouse, France</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<!-- ABOUT -->
 	<section id="about" data-stellar-background-ratio="0.5">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-8"><!-- LEFT -->
-					<div class="alert alert-info" role="alert">
-					  <b>Traveling to Malmö?</b> When traveling via Copenhagen Kastrup Airport, take the <a href="https://www.skanetrafiken.se/english/" target="_blank">Skånetrafiken (link)</a> commuter train to Malmö Central Station (<a href="https://maps.app.goo.gl/5cCDLUpja6Q6DsMUA" targt="_blank">Malmö C - Google Maps</a>). Trains leave every 15 minutes and the ride takes around 25 minutes. From the central station, it is a 400m walk to the venue: Malmö University, Niagara building (<a href="https://maps.app.goo.gl/aQ4z9vfqhmq7w1Jy8" target="_blank">Norra Neptunigatan 1 - Google Maps</a>). The official EUMAS program will start on Wednesday, September 23, at 9:00; registration will open 30 minutes earlier. See the <a href="#local">Venue</a> section below for more details. Warm welcome to Malmö!
-					</div>
-					<div class="alert alert-info" role="alert">
-					  <b>Proceedings:</b> The EUMAS 2026 proceedings will be published by Springer as <a href="https://link.springer.com/book/9783032393944" target="_blank"><i>Multi-Agent Systems: 23rd European Conference, EUMAS 2026, Malmö, Sweden, September 21-25, 2026, Proceedings (LNCS Volume 16829)</i></a>. The volume will be available online shortly before the conference. See the <a href="#publication">Publication</a> section below for details.
+					<div class="alert alert-success" role="alert">
+					  <b>Proceedings published:</b> The EUMAS 2026 proceedings are now available from Springer as <a href="https://link.springer.com/book/10.1007/978-3-032-39395-1" target="_blank" referrerpolicy="no-referrer-when-downgrade"><i>Multi-Agent Systems: 23rd European Conference, EUMAS 2026, Malm&ouml;, Sweden, September 21-25, 2026, Proceedings (LNCS Volume 16829)</i></a>. For a limited time the full volume is openly accessible, but only when opened from this website &mdash; use the link in the <a href="#publication">Publication</a> section.
 					</div>
 					<div class="section-title" style="text-align:left">
 						<h3>About</h3>
@@ -385,7 +470,7 @@
 
             <div class="row">
                 <div class="col-md-offset-3 col-md-6 col-sm-12">
-                    <p class="prog-legend"><span class="prog-award">Best Paper nominee</span>Four papers are nominated for the Best Paper Award. The winner is announced at the closing session on Friday.</p>
+                    <p class="prog-legend"><span class="prog-award prog-award--won">Best Paper Award winner</span><span class="prog-award">nominee</span>Four papers were nominated for the Best Paper Award. See the <a href="#awards">Best Paper Award</a> section for the result.</p>
                 </div>
             </div>
 
@@ -674,7 +759,7 @@
                         <li>
                             <span class="prog-id">41</span>
                             <div>
-                                <p class="prog-title">Group Knowing-How<span class="prog-award">Best Paper nominee</span></p>
+                                <p class="prog-title">Group Knowing-How<span class="prog-award prog-award--won">Best Paper Award winner</span></p>
                                 <p class="prog-authors">Raul Fervari, Rustam Galimullin, Fernando R. Velázquez-Quesada</p>
                             </div>
                         </li>
@@ -896,6 +981,42 @@
     </section>
 
     <!-- PUB -->
+
+    <!-- AWARDS -->
+    <section id="awards" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6 col-sm-12">
+                    <div class="section-title">
+                        <h3>Best Paper Award</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top:10px;">
+                <div class="col-sm-6">
+                    <p class="award-eyebrow">Winner, EUMAS 2026</p>
+                    <h4 class="award-title">Group Knowing-How</h4>
+                    <p class="award-authors">Raul Fervari, Rustam Galimullin, Fernando R. Vel&aacute;zquez-Quesada</p>
+                    <p>
+                        The award was presented at the closing session on Friday, 25 September 2026, on behalf of the Programme Chairs and the General Chairs.
+                    </p>
+                    <p><b>Also nominated:</b></p>
+                    <ul class="award-noms">
+                        <li>Consensus under Cognitive Biases in an Asynchronous Multi-Agent Model of Opinion Evolution &mdash; <span>Frank Valencia, Dreher, Juan Paz, Juan Diaz, Jesus Aranda, Mauricio Mu&ntilde;oz Gutierrez</span></li>
+                        <li>Exploring Plan Space through Conversation: An Agentic Framework for LLM-Mediated Explanations in Planning &mdash; <span>Guilhem Fouilh&eacute;, Rebecca Eifler, Antonin Poch&eacute;, Sylvie Thiebaux, Nicholas Asher</span></li>
+                        <li>Predictive Object Sorting in Robot Swarms Using Purity-Weighted Compactness &mdash; <span>Andrew Vardy, Marius Seidl</span></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6" style="text-align:center;">
+                    <a href="images/best-paper-2026.jpg" target="_blank" title="View the full certificate">
+                        <img src="images/best-paper-2026.jpg" alt="EUMAS 2026 Best Paper Award certificate" class="award-cert" />
+                    </a>
+                    <p class="wrapup-caption">The EUMAS 2026 Best Paper Award certificate. Click to enlarge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="publication" data-stellar-background-ratio="0.5">
         <div class="container">
             <div class="row">
@@ -904,11 +1025,17 @@
                         <h3>Publication</h3>
                     </div>
                     <p>
-                        EUMAS 2026 features post-proceedings published as part of the Lecture Notes in Computer Science (LNCS) series of Springer. Previous EUMAS proceedings can be found in <a href = "https://link.springer.com/conference/eumas">Springer Nature Link</a>.
+                        EUMAS 2026 proceedings are published as part of the Lecture Notes in Computer Science (LNCS) series of Springer. Previous EUMAS proceedings can be found in <a href = "https://link.springer.com/conference/eumas">Springer Nature Link</a>.
                     </p>
                     <p>
                         The official proceedings volume for EUMAS 2026 is:<br/>
-                        <a href="https://link.springer.com/book/9783032393944" target="_blank"><b>Multi-Agent Systems: 23rd European Conference, EUMAS 2026, Malmö, Sweden, September 21-25, 2026, Proceedings (LNCS Volume 16829)</b></a><br/>. The volume will be made available online by Springer shortly before the conference.
+                        <a href="https://link.springer.com/book/10.1007/978-3-032-39395-1" target="_blank" referrerpolicy="no-referrer-when-downgrade"><b>Multi-Agent Systems: 23rd European Conference, EUMAS 2026, Malmö, Sweden, September 21-25, 2026, Proceedings (LNCS Volume 16829)</b></a><br/>
+                        The volume has been published and is available from Springer.
+                    </p>
+                    <div class="alert alert-success" role="alert">
+                        <b>Open access, limited time:</b> For a limited period, the full EUMAS 2026 proceedings volume is openly accessible to everyone:<br/><br/>
+                        <a href="https://link.springer.com/book/10.1007/978-3-032-39395-1" target="_blank" referrerpolicy="no-referrer-when-downgrade" class="btn-eumas"><b>Read the proceedings on SpringerLink &rarr;</b></a><br/><br/>
+                        <b>Please follow the link from this page.</b> Springer grants the free access to visitors arriving from the EUMAS 2026 website, so copying the address into a new tab, or opening it from an email or a social media post, will show the paywall instead. After the free-access period ends, the volume remains available through your institution&rsquo;s Springer subscription.
                     </p>
                     <p>
                         To prepare the camera ready version for the post-proceedings, authors are required to follow the LNCS guidelines for formatting and submission. For those interested in Open Access options in Springer proceedings, an <i><a href="https://www.springer.com/gp/computer-science/lncs/open-access-publishing-in-computer-proceedings" target="_blank">Open Choice</a></i> agreement is available. Please contact Springer for more information.  
